@@ -13,16 +13,13 @@
 # limitations under the License.
 name: "DINAR: update repo's readme"
 
-# disabled
-on: false
-
-#on:
-#  push:
-#    paths:
-#      - ".DINAR/build-date.txt"
-#      - ".DINAR/config.yaml"
-#      - ".github/workflows/DINAR-readme.yml"
-#      - "*/__manifest__.py"
+on:
+  push:
+    paths:
+      - ".DINAR/build-date.txt"
+      - ".DINAR/config.yaml"
+      - ".github/workflows/DINAR-readme.yml"
+      - "*/__manifest__.py"
 jobs:
   repo_readme:
     runs-on: ubuntu-latest
